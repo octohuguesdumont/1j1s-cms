@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: 1j1s-cms
+      POSTGRES_USER: admin-1j1s-cms
+      POSTGRES_PASSWORD: 1front1cms
+    ports:
+      - 5432:5432
