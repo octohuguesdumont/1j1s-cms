@@ -15,8 +15,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', process.env.MINIO_HOST],
-          'media-src': ["'self'", 'data:', 'blob:', process.env.MINIO_HOST],
+          'img-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', process.env.MINIO_ENDPOINT],
+          'media-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', process.env.MINIO_ENDPOINT],
           upgradeInsecureRequests: null,
         },
       },
