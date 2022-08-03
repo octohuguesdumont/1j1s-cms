@@ -19,3 +19,4 @@ Strapi fourni une api de base auto générer qui permet d'accéder à la donnée
   - http://localhost:1337/api/accueil?populate[articles][populate]=*
     (on indique ici qu'on veut accéder à tous les attributs du content type accueil)
   
+[Lien vers la documentation officielle strapi v4](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html)
