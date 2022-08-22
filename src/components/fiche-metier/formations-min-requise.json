@@ -1,15 +1,16 @@
 {
   "collectionName": "components_fiche_metier_formations_min_requises",
   "info": {
-    "displayName": "Formations min requise"
+    "displayName": "Formations min requise",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "formation_min_requise": {
-      "displayName": "Formation min requise",
-      "type": "component",
-      "repeatable": true,
-      "component": "fiche-metier.formation-min-requise"
+    "identifiant": {
+      "type": "string"
+    },
+    "libelle": {
+      "type": "string"
     }
   }
 }

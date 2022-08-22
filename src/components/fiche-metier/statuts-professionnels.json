@@ -1,15 +1,19 @@
 {
   "collectionName": "components_fiche_metier_statuts_professionnels",
   "info": {
-    "displayName": "Statuts professionnels"
+    "displayName": "Statuts professionnels",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "statut": {
-      "displayName": "Statut professionnel",
-      "type": "component",
-      "repeatable": true,
-      "component": "fiche-metier.statut-professionnel"
+    "identifiant": {
+      "type": "string"
+    },
+    "id_ideo1": {
+      "type": "string"
+    },
+    "libelle": {
+      "type": "string"
     }
   }
 }

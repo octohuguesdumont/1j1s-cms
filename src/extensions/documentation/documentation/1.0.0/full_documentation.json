@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-08-18T19:23:26.778Z"
+    "x-generation-date": "2022-08-22T14:22:58.294Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3672,20 +3672,15 @@
                 "type": "string"
               },
               "secteurs_activite": {
-                "type": "object",
-                "properties": {
-                  "secteur_activite": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "identifiant": {
-                          "type": "string"
-                        },
-                        "libelle": {
-                          "type": "string"
-                        }
-                      }
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "identifiant": {
+                      "type": "string"
+                    },
+                    "libelle": {
+                      "type": "string"
                     }
                   }
                 }
@@ -3694,32 +3689,30 @@
                 "type": "string"
               },
               "centres_interet": {
-                "type": "object",
-                "properties": {
-                  "centre_interet": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "identifiant": {
-                          "type": "string"
-                        },
-                        "libelle": {
-                          "type": "string"
-                        }
-                      }
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "identifiant": {
+                      "type": "string"
+                    },
+                    "libelle": {
+                      "type": "string"
                     }
                   }
                 }
               },
               "niveau_acces_min": {
-                "type": "object",
-                "properties": {
-                  "libelle": {
-                    "type": "string"
-                  },
-                  "identifiant": {
-                    "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "libelle": {
+                      "type": "string"
+                    },
+                    "identifiant": {
+                      "type": "string"
+                    }
                   }
                 }
               },
@@ -3733,53 +3726,47 @@
                 "type": "string"
               },
               "statuts": {
-                "type": "object",
-                "properties": {
-                  "statut": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "identifiant": {
-                          "type": "string"
-                        },
-                        "id_ideo1": {
-                          "type": "string"
-                        },
-                        "libelle": {
-                          "type": "string"
-                        }
-                      }
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "identifiant": {
+                      "type": "string"
+                    },
+                    "id_ideo1": {
+                      "type": "string"
+                    },
+                    "libelle": {
+                      "type": "string"
                     }
-                  }
-                }
-              },
-              "synonymes": {
-                "type": "object",
-                "properties": {
-                  "synonyme": {
-                    "type": "string"
                   }
                 }
               },
               "formations_min_requise": {
-                "type": "object",
-                "properties": {
-                  "formation_min_requise": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "identifiant": {
-                          "type": "string"
-                        },
-                        "libelle": {
-                          "type": "string"
-                        }
-                      }
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "identifiant": {
+                      "type": "string"
+                    },
+                    "libelle": {
+                      "type": "string"
                     }
                   }
                 }
+              },
+              "accroche_metier": {
+                "type": "string"
+              },
+              "libelle_feminin": {
+                "type": "string"
+              },
+              "libelle_masculin": {
+                "type": "string"
+              },
+              "synonymes": {
+                "type": "string"
               }
             }
           }
@@ -3809,26 +3796,18 @@
                       "type": "string"
                     },
                     "secteurs_activite": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "secteur_activite": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "identifiant": {
-                                "type": "string"
-                              },
-                              "libelle": {
-                                "type": "string"
-                              }
-                            }
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "identifiant": {
+                            "type": "string"
+                          },
+                          "libelle": {
+                            "type": "string"
                           }
                         }
                       }
@@ -3837,41 +3816,36 @@
                       "type": "string"
                     },
                     "centres_interet": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "centre_interet": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "identifiant": {
-                                "type": "string"
-                              },
-                              "libelle": {
-                                "type": "string"
-                              }
-                            }
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "identifiant": {
+                            "type": "string"
+                          },
+                          "libelle": {
+                            "type": "string"
                           }
                         }
                       }
                     },
                     "niveau_acces_min": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "libelle": {
-                          "type": "string"
-                        },
-                        "identifiant": {
-                          "type": "string"
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "libelle": {
+                            "type": "string"
+                          },
+                          "identifiant": {
+                            "type": "string"
+                          }
                         }
                       }
                     },
@@ -3885,68 +3859,53 @@
                       "type": "string"
                     },
                     "statuts": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "statut": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "identifiant": {
-                                "type": "string"
-                              },
-                              "id_ideo1": {
-                                "type": "string"
-                              },
-                              "libelle": {
-                                "type": "string"
-                              }
-                            }
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "identifiant": {
+                            "type": "string"
+                          },
+                          "id_ideo1": {
+                            "type": "string"
+                          },
+                          "libelle": {
+                            "type": "string"
                           }
-                        }
-                      }
-                    },
-                    "synonymes": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "synonyme": {
-                          "type": "string"
                         }
                       }
                     },
                     "formations_min_requise": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "formation_min_requise": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "identifiant": {
-                                "type": "string"
-                              },
-                              "libelle": {
-                                "type": "string"
-                              }
-                            }
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "identifiant": {
+                            "type": "string"
+                          },
+                          "libelle": {
+                            "type": "string"
                           }
                         }
                       }
+                    },
+                    "accroche_metier": {
+                      "type": "string"
+                    },
+                    "libelle_feminin": {
+                      "type": "string"
+                    },
+                    "libelle_masculin": {
+                      "type": "string"
+                    },
+                    "synonymes": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -4293,26 +4252,18 @@
                     "type": "string"
                   },
                   "secteurs_activite": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "secteur_activite": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "identifiant": {
-                              "type": "string"
-                            },
-                            "libelle": {
-                              "type": "string"
-                            }
-                          }
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "identifiant": {
+                          "type": "string"
+                        },
+                        "libelle": {
+                          "type": "string"
                         }
                       }
                     }
@@ -4321,41 +4272,36 @@
                     "type": "string"
                   },
                   "centres_interet": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "centre_interet": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "identifiant": {
-                              "type": "string"
-                            },
-                            "libelle": {
-                              "type": "string"
-                            }
-                          }
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "identifiant": {
+                          "type": "string"
+                        },
+                        "libelle": {
+                          "type": "string"
                         }
                       }
                     }
                   },
                   "niveau_acces_min": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "libelle": {
-                        "type": "string"
-                      },
-                      "identifiant": {
-                        "type": "string"
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "libelle": {
+                          "type": "string"
+                        },
+                        "identifiant": {
+                          "type": "string"
+                        }
                       }
                     }
                   },
@@ -4369,68 +4315,53 @@
                     "type": "string"
                   },
                   "statuts": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "statut": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "identifiant": {
-                              "type": "string"
-                            },
-                            "id_ideo1": {
-                              "type": "string"
-                            },
-                            "libelle": {
-                              "type": "string"
-                            }
-                          }
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "identifiant": {
+                          "type": "string"
+                        },
+                        "id_ideo1": {
+                          "type": "string"
+                        },
+                        "libelle": {
+                          "type": "string"
                         }
-                      }
-                    }
-                  },
-                  "synonymes": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "synonyme": {
-                        "type": "string"
                       }
                     }
                   },
                   "formations_min_requise": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "formation_min_requise": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "identifiant": {
-                              "type": "string"
-                            },
-                            "libelle": {
-                              "type": "string"
-                            }
-                          }
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "identifiant": {
+                          "type": "string"
+                        },
+                        "libelle": {
+                          "type": "string"
                         }
                       }
                     }
+                  },
+                  "accroche_metier": {
+                    "type": "string"
+                  },
+                  "libelle_feminin": {
+                    "type": "string"
+                  },
+                  "libelle_masculin": {
+                    "type": "string"
+                  },
+                  "synonymes": {
+                    "type": "string"
                   },
                   "createdAt": {
                     "type": "string",
