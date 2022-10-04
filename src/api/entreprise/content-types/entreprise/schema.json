@@ -17,6 +17,9 @@
     "code_postal": {
       "type": "string"
     },
+    "ville": {
+      "type": "string"
+    },
     "siret": {
       "type": "string"
     },
