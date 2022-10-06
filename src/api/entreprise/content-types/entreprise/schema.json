@@ -43,6 +43,9 @@
     },
     "travail": {
       "type": "string"
+    },
+    "erreur": {
+      "type": "string"
     }
   }
 }
