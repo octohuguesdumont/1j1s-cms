@@ -8,6 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
+    "roles:export": "config-sync export --type user-role --yes",
+    "roles:sync": "config-sync import --type user-role --yes",
     "postgres:kill": "docker stop 1j1s-cms_db_1 || true && docker rm 1j1s-cms_db_1 || true",
     "postgres:up": "docker-compose up -d",
     "postgres:seed": "cat dump.sql | docker exec -i 1j1s-cms_db_1 psql -U admin-1j1s-cms 1j1s-cms",

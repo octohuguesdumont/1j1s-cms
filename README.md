@@ -38,6 +38,26 @@ reload. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-reso
 npm run develop
 ```
 
+#### Synchroniser la configuration des droits
+
+Strapi stocke les droits des rôles _Public_ et _Authenticated_ en tant que contenu, mais
+nous utilisons le plugin `strapi-plugin-config-sync` pour les déclarer dans le code. ils sont synchronisés à chaque
+déploiement.
+
+Pour utiliser les roles déclarés dans le codes, utilisez
+
+```
+npm run roles:sync
+```
+
+Une fois que vous avez adapter les droits sur votre instance locales, faites
+
+```
+npm run roles:export
+```
+
+et committez les fichiers ainsi créés
+
 ### Tester le mode prod en dev
 
 Mode prod. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
